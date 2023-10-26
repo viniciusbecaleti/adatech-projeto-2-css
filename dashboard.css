@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: 100px 1fr auto;
+  margin-top: 0;
+}
+
+header {
+  position: static !important;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+main {
+  max-width: 500px;
+  min-height: calc(100% - 100px);
+  margin-inline: auto;
+  padding-block: 4rem;
+}
+
+main h2 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+main form {
+  margin-bottom: 2rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}

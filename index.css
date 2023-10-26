@@ -1,0 +1,24 @@
+.trending-products {
+  padding-block: 4rem;
+}
+
+.trending-products header {
+  margin-bottom: 2rem;
+}
+
+.trending-products .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 2rem;
+}
+
+.products .row img {
+  max-width: 300px;
+  margin-inline: auto;
+}
+
+.products .price h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Sakura Izakaya - Sabores autênticos japoneses e ambiente acolhedor,
+      reserve agora!
+    </title>
+    <meta
+      name="description"
+      content="Descubra a doçura perfeita! Chocolates, balas e guloseimas irresistíveis. Faça sua encomenda e adoce sua vida conosco!"
+    />
+    <meta
+      property="og:title"
+      content="Sakura Izakaya - Sabores autênticos japoneses e ambiente acolhedor, reserve agora!"
+    />
+    <meta
+      property="og:description"
+      content="Descubra a doçura perfeita! Chocolates, balas e guloseimas irresistíveis. Faça sua encomenda e adoce sua vida conosco!"
+    />
+    <meta property="og:url" content="http://localhost:3000" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body id="home">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/logo.png" alt="" />
+        </a>
+
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#products">Produtos</a>
+            </li>
+            <li>
+              <a href="dashboard.html">Painel de Contole</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button type="button" data-menu="open">
+          <i class='bx bx-menu'></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- hero -->
+    <!-- <section class="hero">
+      <div class="container">
+        <div class="main-text">
+          <h5>Doces japoneses</h5>
+          <h1>Explorando os<br />sabores do Oriente</h1>
+          <p>Viva a experiência dos sabores orientais com a gente.</p>
+
+          <a href="#" class="main-btn">
+            Compre agora <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+
+        <div class="down-arrow">
+          <a href="#trending" class="down">
+            <i class="bx bx-down-arrow-alt"></i>
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- trending products -->
+    <section id="products" class="trending-products">
+      <div class="container">
+        <header>
+          <h2>Os mais <span>pedidos</span></h2>
+        </header>
+
+        <div class="products">
+          <div class="row">
+            <img src="./assets/comida-1.jpg" alt="" />
+            <!-- <div class="product-text">
+              <h5>Novo</h5>
+            </div> -->
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4 title="Pocky Biscoito Morango Glico - 41g">Pocky Biscoito Morango Glico - 41g</h4>
+              <p>R$14,90</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/comida-2.jpg" alt="" />
+            <!-- <div class="product-text">
+              <h5>Novo</h5>
+            </div> -->
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4 title="Pocky Biscoito Blueberry Glico - 41g">Pocky Biscoito Blueberry Glico - 41g</h4>
+              <p>R$14,90</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/comida-3.jpg" alt="" />
+            <div class="product-text"></div>
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4 title="Choco Pie Bolinho de Chocolate">Choco Pie Bolinho de Chocolate</h4>
+              <p>R$16,00</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/comida-4.jpg" alt="" />
+            <div class="product-text"></div>
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4 title="Biscoito com Cobertura de Chocolate">Biscoito com Cobertura de Chocolate</h4>
+              <p>R$11,00</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/comida-5.jpg" alt="" />
+            <!-- <div class="product-text">
+              <h5>Oferta</h5>
+            </div> -->
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4 title="Marshmallow Recheado com Morango">Marshmallow Recheado com Morango</h4>
+              <p>R$14,00</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/comida-6.jpg" alt="" />
+            <!-- <div class="product-text">
+              <h5>Novo</h5>
+            </div> -->
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4 title="Bala Coreana de Leite Malang Tradicional">Bala Coreana de Leite Malang Tradicional</h4>
+              <p>R$21,50</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/comida-7.jpg" alt="" />
+            <div class="product-text"></div>
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4>Doce Japonês Mochi Sabor Melão</h4>
+              <p>R$35,80</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/bebida-1.jpg" alt="" />
+            <!-- <div class="product-text">
+              <h5>Oferta</h5>
+            </div> -->
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4 title="Ramune Refrigerante Japonês Sabor Lichia">Ramune Refrigerante Japonês Sabor Lichia</h4>
+              <p>R$17,90</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/bebida-2.jpg" alt="" />
+            <div class="product-text"></div>
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4 title="Suco de Uva Verde com Pedaços">Suco de Uva Verde com Pedaços</h4>
+              <p>R$11,40</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/bebida-3.jpg" alt="" />
+            <div class="product-text"></div>
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4>Saquê Licoroso Japonês Especial</h4>
+              <p>R$92,70</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/bebida-5.jpg" alt="" />
+            <!-- <div class="product-text">
+              <h5>Novo</h5>
+            </div> -->
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4 title="Refrigerante Pokemon Gengar Sabor Morango">Refrigerante Pokemon Gengar Sabor Morango</h4>
+              <p>R$21,50</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="./assets/bebida-6.jpg" alt="" />
+            <!-- <div class="product-text">
+              <h5>Oferta</h5>
+            </div> -->
+            <div class="heart-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+
+            <div class="price">
+              <h4 title="Kit De Bebida Calpis Water 3 Sabores (Original, Uva e Maçã Cenoura)">
+                Kit De Bebida Calpis Water 3 Sabores (Original, Uva e Maçã Cenoura)
+              </h4>
+              <p>R$47,80</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="#">Nossos serviços</a></li>
+            <li><a href="#">Segurança e pravidade</a></li>
+            <li><a href="#">Termos de uso</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ajuda</h4>
+          <ul>
+            <li><a href="contato.html">Fale conosco</a></li>
+            <li><a href="#">Como comprar</a></li>
+            <li><a href="#">Garantia de produtos</a></li>
+            <li><a href="#">Fretes e entregas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Produtos</h4>
+          <ul>
+            <li><a href="#">Balinhas</a></li>
+            <li><a href="#">Refrigerante</a></li>
+            <li><a href="#">Chá</a></li>
+            <li><a href="#">Chocolate</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h4>Redes Sociais</h4>
+          <div>
+            <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright ©️ @2023. All Rights Reserved. Design By
+          <a href="https://github.com/ahcarol/loja-doces-ada" target="_blank">
+            Carol Dutra
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
